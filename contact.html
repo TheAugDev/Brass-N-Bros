@@ -6,14 +6,27 @@
     <title>Brass N Bros - Contact & Connect</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Centralized CSS: assets/css/style.css contains the site styles and utilities -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicons -->
-    <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-    <meta name="theme-color" content="#0d0d0d">
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Dark background for a high-end feel */
+            color: #f7ffee; /* Off-white text for contrast */
+        }
+        .brass {
+            color: #d4af37; /* Gold/Brass accent color */
+        }
+        .brass-bg {
+            background-color: #d4af37;
+        }
+        .brass-border {
+            border-color: #d4af37;
+        }
+        .nav-link:hover {
+            color: #d4af37;
+        }
+    </style>
 </head>
 <body class="antialiased">
 
@@ -68,7 +81,8 @@
                     <p class="text-gray-300 mb-6">Don't miss our weekly 2A commentary and gear discount codes. Get direct access to the B&B crew.</p>
                     <form>
                         <input type="email" placeholder="Your Best Email" class="w-full p-3 mb-3 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-brass focus:outline-none">
-                        <button type="submit" class="w-full brass-bg text-black font-bold p-3 rounded-lg transition duration-300">
+                        <!-- Button uses brass-bg and text-black for HIGH contrast -->
+                        <button type="submit" class="w-full brass-bg text-black font-bold p-3 rounded-lg hover:bg-white transition duration-300">
                             Join the Newsletter
                         </button>
                     </form>
@@ -97,10 +111,26 @@
                     <h3 class="text-3xl font-bold brass mb-4 mt-10">Follow the Action</h3>
                     <p class="text-gray-300">Catch all the latest videos and behind-the-scenes action on social media.</p>
                     <div class="flex space-x-6 mt-4 justify-start">
-                        <!-- Social Media Icons (using simple text/placeholder) -->
-                        <a href="#" class="text-4xl hover:brass transition duration-300 text-white" aria-label="YouTube Channel">YT</a>
-                        <a href="#" class="text-4xl hover:brass transition duration-300 text-white" aria-label="Instagram">IG</a>
-                        <a href="#" class="text-4xl hover:brass transition duration-300 text-white" aria-label="Twitter/X">X</a>
+                        <!-- Social Media Icons (inline SVGs) -->
+                        <a href="#" class="social-link hover:brass transition duration-300 text-white" aria-label="YouTube Channel" title="YouTube">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M23.5 6.2a3 3 0 0 0-2.12-2.12C19.7 3.5 12 3.5 12 3.5s-7.7 0-9.38.58A3 3 0 0 0 .5 6.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .5 5.8 3 3 0 0 0 2.12 2.12c1.68.58 9.38.58 9.38.58s7.7 0 9.38-.58A3 3 0 0 0 23.5 17.8c.33-1.9.5-3.8.5-5.8s-.17-3.9-.5-5.8z" fill="currentColor"/>
+                                <path d="M9.75 15.02V8.98L15.5 12l-5.75 3.02z" fill="#000"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link hover:brass transition duration-300 text-white" aria-label="Instagram" title="Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none" />
+                                <circle cx="12" cy="12" r="3.2" fill="currentColor" />
+                                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link hover:brass transition duration-300 text-white" aria-label="X" title="X">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M20 4L12 11.2 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 20l-8-7.2L4 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -137,6 +167,5 @@
             });
         });
     </script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

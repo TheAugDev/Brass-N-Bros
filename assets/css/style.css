@@ -23,12 +23,8 @@ footer{padding:1rem;text-align:center;background:rgb(17 24 39);margin-top:2rem}
 .brass-border{ border-color: var(--accent); }
 .border-d4af37{ border-color: var(--accent); }
 
-/* Stronger fallbacks: make brass utilities win over conflicting utility classes */
-.brass{ color: var(--accent) !important; }
-.text-brass{ color: var(--accent) !important; }
-.brass-bg{ background-color: var(--accent) !important; }
-.bg-brass{ background-color: var(--accent) !important; }
-.brass-border{ border-color: var(--accent) !important; }
+
+/* Note: removed !important fallbacks — prefer explicit classes in markup for predictable styling */
 
 /* Hover utilities (match class names used in markup) */
 .hover\:brass:hover{ color: var(--accent); }
@@ -47,4 +43,8 @@ footer{padding:1rem;text-align:center;background:rgb(17 24 39);margin-top:2rem}
 .nav-link:hover{ color: var(--accent); }
 .rounded-lg{ border-radius:0.5rem; }
 .shadow-lg{ box-shadow: 0 10px 15px rgba(2,6,23,0.6); }
+
+/* Social icon helper */
+.social-icon{ width:1.6rem; height:1.6rem; display:inline-block; vertical-align:middle; }
+.social-link{ display:inline-flex; align-items:center; justify-content:center; }
 
