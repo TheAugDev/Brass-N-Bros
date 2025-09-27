@@ -6,14 +6,27 @@
     <title>Brass N Bros - The Academy</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Centralized CSS: assets/css/style.css contains the site styles and utilities -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicons -->
-    <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-    <meta name="theme-color" content="#0d0d0d">
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Dark background for a high-end feel */
+            color: #f7ffee; /* Off-white text for contrast */
+        }
+        .brass {
+            color: #d4af37; /* Gold/Brass accent color */
+        }
+        .brass-bg {
+            background-color: #d4af37;
+        }
+        .brass-border {
+            border-color: #d4af37;
+        }
+        .nav-link:hover {
+            color: #d4af37;
+        }
+    </style>
 </head>
 <body class="antialiased">
 
@@ -119,8 +132,8 @@
                     <p class="text-gray-300 text-lg mb-6 max-w-3xl mx-auto">
                         Don't miss a single video. Get the latest instructional content and 2A commentary directly on our YouTube channel and join the discussion in the comments!
                     </p>
-                    <!-- Placeholder link to YouTube Channel -->
-                    <a href="#" class="inline-block px-10 py-3 text-lg font-bold text-black brass-bg rounded-lg transition duration-300 transform hover:scale-105">
+                    <!-- Button uses brass-bg and text-black for HIGH contrast -->
+                    <a href="#" class="inline-block px-10 py-3 text-lg font-bold text-black bg-brass rounded-lg hover:bg-white transition duration-300 transform hover:scale-105">
                         Visit the YouTube Channel →
                     </a>
                 </div>
@@ -159,7 +172,5 @@
             });
         });
     </script>
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -6,14 +6,27 @@
     <title>Brass N Bros - Shop Gear</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Centralized CSS: assets/css/style.css contains the site styles and utilities -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicons -->
-    <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-    <meta name="theme-color" content="#0d0d0d">
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Dark background for a high-end feel */
+            color: #f7ffee; /* Off-white text for contrast */
+        }
+        .brass {
+            color: #d4af37; /* Gold/Brass accent color */
+        }
+        .brass-bg {
+            background-color: #d4af37;
+        }
+        .brass-border {
+            border-color: #d4af37;
+        }
+        .nav-link:hover {
+            color: #d4af37;
+        }
+    </style>
 </head>
 <body class="antialiased">
 
@@ -76,7 +89,8 @@
                         <h3 class="text-2xl font-bold mb-2 text-white">The Classic Brass T</h3>
                         <p class="text-gray-300 mb-4">Premium cotton blend featuring the original B&B logo. Available in S-XXL.</p>
                         <p class="text-3xl font-extrabold brass mb-4">$29.99</p>
-                        <a href="#" class="block brass-bg text-black font-semibold py-3 rounded-lg transition duration-300 hover:scale-105">
+                        <!-- Button uses white-bg and text-black for HIGH contrast -->
+                        <a href="#" class="block bg-white text-black font-semibold py-3 rounded-lg hover:bg-brass hover:text-black transition duration-300">
                             Add to Cart
                         </a>
                     </div>
@@ -87,7 +101,8 @@
                         <h3 class="text-2xl font-bold mb-2 text-white">The Range Cap (Snapback)</h3>
                         <p class="text-gray-300 mb-4">Tactical snapback with moisture-wicking technology. Subtle brass emblem.</p>
                         <p class="text-3xl font-extrabold brass mb-4">$34.99</p>
-                        <a href="#" class="block brass-bg text-black font-semibold py-3 rounded-lg transition duration-300 hover:scale-105">
+                         <!-- Button uses white-bg and text-black for HIGH contrast -->
+                        <a href="#" class="block bg-white text-black font-semibold py-3 rounded-lg hover:bg-brass hover:text-black transition duration-300">
                             Add to Cart
                         </a>
                     </div>
@@ -98,7 +113,8 @@
                         <h3 class="text-2xl font-bold mb-2 text-white">The B&B Sticker Pack</h3>
                         <p class="text-gray-300 mb-4">High-quality vinyl logos for your Pelican case, safe, or workshop fridge.</p>
                         <p class="text-3xl font-extrabold brass mb-4">$9.99</p>
-                        <a href="#" class="block brass-bg text-black font-semibold py-3 rounded-lg transition duration-300 hover:scale-105">
+                         <!-- Button uses white-bg and text-black for HIGH contrast -->
+                        <a href="#" class="block bg-white text-black font-semibold py-3 rounded-lg hover:bg-brass hover:text-black transition duration-300">
                             Add to Cart
                         </a>
                     </div>
@@ -124,6 +140,7 @@
                         <h3 class="text-2xl font-bold mb-2 text-white">Electronic Hearing Protection</h3>
                         <p class="text-gray-300 mb-4">The must-have electronic muffs for clear communication on the firing line.</p>
                         <p class="text-xl font-extrabold brass mb-4">Click to Check Price</p>
+                        <!-- Button uses brass-bg and text-black for HIGH contrast -->
                         <a href="#" class="block brass-bg text-black font-semibold py-3 rounded-lg hover:bg-white transition duration-300">
                             View Affiliate Link
                         </a>
@@ -135,6 +152,7 @@
                         <h3 class="text-2xl font-bold mb-2 text-white">Universal Cleaning Kit</h3>
                         <p class="text-gray-300 mb-4">Everything you need to maintain your pistol and rifle (featured in our V6 video).</p>
                         <p class="text-xl font-extrabold brass mb-4">Click to Check Price</p>
+                        <!-- Button uses brass-bg and text-black for HIGH contrast -->
                         <a href="#" class="block brass-bg text-black font-semibold py-3 rounded-lg hover:bg-white transition duration-300">
                             View Affiliate Link
                         </a>
@@ -175,7 +193,5 @@
             });
         });
     </script>
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
