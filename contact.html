@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brass N Bros - Contact & Connect</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Centralized CSS: assets/css/style.css contains the site styles and utilities -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0d0d0d">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo/Brand Name -->
+                <a href="index.html" class="text-3xl font-extrabold tracking-tight">
+                    <span class="text-white">BRASS N</span> <span class="brass">BROS</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 font-medium text-lg">
+                    <a href="academy.html" class="nav-link text-white transition duration-300">The Academy</a>
+                    <a href="about.html" class="nav-link text-white transition duration-300">Our Mission</a>
+                    <a href="shop.html" class="nav-link text-white transition duration-300">Shop Gear</a>
+                    <a href="contact.html" class="nav-link text-white transition duration-300 border-b-2 border-d4af37 pb-1">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black/90 pb-4">
+            <a href="academy.html" class="block py-2 px-4 text-center text-white hover:brass transition duration-300">The Academy</a>
+            <a href="about.html" class="block py-2 px-4 text-center text-white hover:brass transition duration-300">Our Mission</a>
+            <a href="shop.html" class="block py-2 px-4 text-center text-white hover:brass transition duration-300">Shop Gear</a>
+            <a href="contact.html" class="block py-2 px-4 text-center text-white hover:brass transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <section class="pt-16 pb-20 bg-black">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+                
+                <div class="md:col-span-3 text-center mb-8">
+                    <h1 class="text-6xl font-extrabold mb-4">
+                        <span class="brass">Connect</span> with the Crew
+                    </h1>
+                    <p class="text-xl text-gray-300">Get in touch for partnerships, support, or to join the newsletter.</p>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="md:col-span-1 p-6 bg-gray-900 rounded-xl shadow-lg border-t-2 brass-border">
+                    <h3 class="text-3xl font-bold brass mb-4">Newsletter Exclusive</h3>
+                    <p class="text-gray-300 mb-6">Don't miss our weekly 2A commentary and gear discount codes. Get direct access to the B&B crew.</p>
+                    <form>
+                        <input type="email" placeholder="Your Best Email" class="w-full p-3 mb-3 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-brass focus:outline-none">
+                        <button type="submit" class="w-full brass-bg text-black font-bold p-3 rounded-lg hover:bg-white transition duration-300">
+                            Join the Newsletter
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Links -->
+                <div class="md:col-span-2 p-6 bg-gray-900 rounded-xl shadow-lg border-t-2 brass-border">
+                    <h3 class="text-3xl font-bold brass mb-6">Business & Support Inquiries</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2">Partnerships & Media</h4>
+                            <p class="text-gray-300">For sponsored content, brand deals, or media appearances:</p>
+                            <p class="text-lg font-medium text-white mt-2">
+                                <a href="mailto:partners@brassnbros.com" class="hover:brass transition duration-300">partners@brassnbros.com</a>
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white mb-2">Support & Merch Orders</h4>
+                            <p class="text-gray-300">For issues with orders, Academy access, or general support:</p>
+                            <p class="text-lg font-medium text-white mt-2">
+                                <a href="mailto:support@brassnbros.com" class="hover:brass transition duration-300">support@brassnbros.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-3xl font-bold brass mb-4 mt-10">Follow the Action</h3>
+                    <p class="text-gray-300">Catch all the latest videos and behind-the-scenes action on social media.</p>
+                    <div class="flex space-x-6 mt-4 justify-start">
+                        <!-- Social Media Icons (using simple text/placeholder) -->
+                        <a href="#" class="text-4xl hover:brass transition duration-300 text-white" aria-label="YouTube Channel">YT</a>
+                        <a href="#" class="text-4xl hover:brass transition duration-300 text-white" aria-label="Instagram">IG</a>
+                        <a href="#" class="text-4xl hover:brass transition duration-300 text-white" aria-label="Twitter/X">X</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Simple Consistent Footer -->
+    <footer class="bg-gray-900 py-10 text-center border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <nav class="flex justify-center space-x-6 mb-4 text-sm font-medium text-gray-400">
+                <a href="academy.html" class="hover:brass transition duration-300">The Academy</a>
+                <a href="about.html" class="hover:brass transition duration-300">Our Mission</a>
+                <a href="shop.html" class="hover:brass transition duration-300">Shop Gear</a>
+                <a href="contact.html" class="hover:brass transition duration-300">Contact</a>
+            </nav>
+            <p class="text-gray-600 text-sm">
+                &copy; 2025 Brass N Bros. All Rights Reserved. | Dedicated to Safe & Responsible Firearm Ownership.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

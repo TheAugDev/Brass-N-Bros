@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brass N Bros - Shop Gear</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Centralized CSS: assets/css/style.css contains the site styles and utilities -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0d0d0d">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo/Brand Name -->
+                <a href="index.html" class="text-3xl font-extrabold tracking-tight">
+                    <span class="text-white">BRASS N</span> <span class="brass">BROS</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 font-medium text-lg">
+                    <a href="academy.html" class="nav-link text-white transition duration-300">The Academy</a>
+                    <a href="about.html" class="nav-link text-white transition duration-300">Our Mission</a>
+                    <a href="shop.html" class="nav-link text-white transition duration-300 border-b-2 border-d4af37 pb-1">Shop Gear</a>
+                    <a href="contact.html" class="nav-link text-white transition duration-300">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black/90 pb-4">
+            <a href="academy.html" class="block py-2 px-4 text-center text-white hover:brass transition duration-300">The Academy</a>
+            <a href="about.html" class="block py-2 px-4 text-center text-white hover:brass transition duration-300">Our Mission</a>
+            <a href="shop.html" class="block py-2 px-4 text-center text-white hover:brass transition duration-300">Shop Gear</a>
+            <a href="contact.html" class="block py-2 px-4 text-center text-white hover:brass transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Shop Header -->
+        <section class="pt-16 pb-10 bg-black text-center border-b border-gray-800">
+            <h1 class="text-6xl font-extrabold mb-3">
+                The <span class="brass">Official Shop</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-4xl mx-auto px-6">
+                Every purchase directly supports our mission of safe firearm education. Rep the brand and get the gear we use.
+            </p>
+        </section>
+
+        <!-- Official Merchandise Section -->
+        <section class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-5xl font-extrabold mb-12">
+                    Official <span class="brass">Brass N Bros</span> Apparel
+                </h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Product Card 1: Apparel -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-300 border-t-2 brass-border">
+                        <img src="https://placehold.co/400x400/333/d4af37?text=BNB+Classic+Tee" alt="Brass N Bros T-Shirt" class="w-full h-auto rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2 text-white">The Classic Brass T</h3>
+                        <p class="text-gray-300 mb-4">Premium cotton blend featuring the original B&B logo. Available in S-XXL.</p>
+                        <p class="text-3xl font-extrabold brass mb-4">$29.99</p>
+                        <a href="#" class="block bg-white text-black font-semibold py-3 rounded-lg hover:bg-brass hover:text-black transition duration-300">
+                            Add to Cart
+                        </a>
+                    </div>
+
+                    <!-- Product Card 2: Headwear -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-300 border-t-2 brass-border">
+                        <img src="https://placehold.co/400x400/333/d4af37?text=BNB+Range+Cap" alt="Brass N Bros Hat" class="w-full h-auto rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2 text-white">The Range Cap (Snapback)</h3>
+                        <p class="text-gray-300 mb-4">Tactical snapback with moisture-wicking technology. Subtle brass emblem.</p>
+                        <p class="text-3xl font-extrabold brass mb-4">$34.99</p>
+                        <a href="#" class="block bg-white text-black font-semibold py-3 rounded-lg hover:bg-brass hover:text-black transition duration-300">
+                            Add to Cart
+                        </a>
+                    </div>
+                    
+                    <!-- Product Card 3: Sticker Pack -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-300 border-t-2 brass-border">
+                        <img src="https://placehold.co/400x400/333/d4af37?text=BNB+Sticker+Pack" alt="Brass N Bros Sticker Pack" class="w-full h-auto rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2 text-white">The B&B Sticker Pack</h3>
+                        <p class="text-gray-300 mb-4">High-quality vinyl logos for your Pelican case, safe, or workshop fridge.</p>
+                        <p class="text-3xl font-extrabold brass mb-4">$9.99</p>
+                        <a href="#" class="block bg-white text-black font-semibold py-3 rounded-lg hover:bg-brass hover:text-black transition duration-300">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Gear (Affiliates) Section -->
+        <section class="py-20 bg-black">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-5xl font-extrabold mb-12">
+                    <span class="brass">Recommended</span> Starter Gear
+                </h2>
+                <p class="text-gray-300 text-lg mb-10 max-w-3xl mx-auto">
+                    These are the exact products we feature in the Academy videos. We only recommend gear that we trust with our own safety and training.
+                </p>
+
+                <!-- Affiliate Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Affiliate Card 1: Gear/Affiliate Link -->
+                    <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-300 border-t-2 brass-border">
+                        <img src="https://placehold.co/400x400/333/d4af37?text=Electronic+Ear+Pro" alt="Recommended Electronic Ear Protection" class="w-full h-auto rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Electronic Hearing Protection</h3>
+                        <p class="text-gray-300 mb-4">The must-have electronic muffs for clear communication on the firing line.</p>
+                        <p class="text-xl font-extrabold brass mb-4">Click to Check Price</p>
+                        <a href="#" class="block brass-bg text-black font-semibold py-3 rounded-lg hover:bg-white transition duration-300">
+                            View Affiliate Link
+                        </a>
+                    </div>
+                    
+                    <!-- Affiliate Card 2: Cleaning Kits -->
+                    <div class="bg-gray-900 p-6 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-300 border-t-2 brass-border">
+                        <img src="https://placehold.co/400x400/333/d4af37?text=Universal+Cleaning+Kit" alt="Recommended Cleaning Kit" class="w-full h-auto rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Universal Cleaning Kit</h3>
+                        <p class="text-gray-300 mb-4">Everything you need to maintain your pistol and rifle (featured in our V6 video).</p>
+                        <p class="text-xl font-extrabold brass mb-4">Click to Check Price</p>
+                        <a href="#" class="block brass-bg text-black font-semibold py-3 rounded-lg hover:bg-white transition duration-300">
+                            View Affiliate Link
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Simple Consistent Footer -->
+    <footer class="bg-gray-900 py-10 text-center border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <nav class="flex justify-center space-x-6 mb-4 text-sm font-medium text-gray-400">
+                <a href="academy.html" class="hover:brass transition duration-300">The Academy</a>
+                <a href="about.html" class="hover:brass transition duration-300">Our Mission</a>
+                <a href="shop.html" class="hover:brass transition duration-300">Shop Gear</a>
+                <a href="contact.html" class="hover:brass transition duration-300">Contact</a>
+            </nav>
+            <p class="text-gray-600 text-sm">
+                &copy; 2025 Brass N Bros. All Rights Reserved. | Dedicated to Safe & Responsible Firearm Ownership.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

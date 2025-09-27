@@ -1,0 +1,14 @@
+{
+  "name": "brass-n-bros-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server . -p 8000 -c-1",
+    "serve": "npx serve . -l 8000",
+    "live": "npx live-server --port=8000",
+    "gen:icons": "node tools/generate-favicons.js"
+  }
+  ,"devDependencies": {
+    "sharp": "^0.32.1"
+  }
+}

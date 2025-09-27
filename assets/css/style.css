@@ -1,0 +1,37 @@
+/* Centralized site stylesheet — dark theme to match inline styles in pages */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+  --bg: #0d0d0d; /* site background (dark) */
+  --fg: #f7ffee; /* off-white text */
+  --muted: #9ca3af; /* muted gray */
+  --accent: #d4af37; /* brass/gold */
+}
+
+/* Base layout */
+html,body{height:100%;margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg)}
+header{background:rgba(0,0,0,0.8);padding:0.5rem 1rem;border-bottom:1px solid rgba(148,163,184,0.06)}
+nav a{margin-right:1rem;color:var(--fg);text-decoration:none}
+main{padding:2rem}
+footer{padding:1rem;text-align:center;background:rgb(17 24 39);margin-top:2rem}
+
+/* Brass utility classes used in the HTML */
+.brass{ color: var(--accent); }
+.text-brass{ color: var(--accent); }
+.brass-bg{ background-color: var(--accent); }
+.bg-brass{ background-color: var(--accent); }
+.brass-border{ border-color: var(--accent); }
+.border-d4af37{ border-color: var(--accent); }
+
+/* Hover utilities (match class names used in markup) */
+.hover\:brass:hover{ color: var(--accent); }
+.hover\:bg-brass:hover{ background-color: var(--accent); }
+.hover\:text-brass:hover{ color: var(--accent); }
+.hover\:border-d4af37:hover{ border-color: var(--accent); }
+.hover\:brass-border:hover{ border-color: var(--accent); }
+
+/* Small helpers used by pages */
+.nav-link:hover{ color: var(--accent); }
+.rounded-lg{ border-radius:0.5rem; }
+.shadow-lg{ box-shadow: 0 10px 15px rgba(2,6,23,0.6); }
+
