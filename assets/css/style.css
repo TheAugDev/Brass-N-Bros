@@ -37,6 +37,12 @@ footer{padding:1rem;text-align:center;background:rgb(17 24 39);margin-top:2rem}
 .hover\:border-d4af37:hover{ border-color: var(--accent); }
 .hover\:brass-border:hover{ border-color: var(--accent); }
 
+/* Focus / ring helpers (used on inputs and interactive elements) */
+.focus\:ring-brass:focus{ box-shadow: 0 0 0 4px rgba(212,175,55,0.12); }
+.focus\:ring-2-brass:focus{ box-shadow: 0 0 0 6px rgba(212,175,55,0.12); }
+.focus\:outline-none:focus{ outline: none; }
+.focus\:ring-brass-inner:focus{ box-shadow: inset 0 0 0 2px rgba(212,175,55,0.12); }
+
 /* Small helpers used by pages */
 .nav-link:hover{ color: var(--accent); }
 .rounded-lg{ border-radius:0.5rem; }
