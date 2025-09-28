@@ -48,12 +48,15 @@ footer{padding:1rem;text-align:center;background:rgb(17 24 39);margin-top:2rem}
 .social-icon{ width:1.6rem; height:1.6rem; display:inline-block; vertical-align:middle; }
 .social-link{ display:inline-flex; align-items:center; justify-content:center; }
 
-/* Header logo sizing */
-.header-logo{ height:auto; max-height:28px; max-width:160px; width:auto; display:block; margin-right:0.5rem; object-fit:contain; }
+/* Header logo sizing: slightly smaller and contained to avoid overlap */
+.header-logo{ height:auto; max-height:24px; max-width:140px; width:auto; display:block; margin-right:0.5rem; object-fit:contain; }
 
 @media (min-width: 768px){
-  .header-logo{ max-height:36px; }
+  .header-logo{ max-height:32px; }
 }
+
+/* Make the header brand anchor a flex container so the image centers vertically */
+a.text-3xl.font-extrabold.tracking-tight{ display:inline-flex; align-items:center; gap:0.5rem; }
 
 /* Screen-reader only helper */
 .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
